@@ -1,0 +1,10 @@
+[package]
+name = "sma-rusted"
+version = "0.1.0"
+authors = ["Takashi Aoi <hoge@hoge.com>"]
+
+[lib]
+name = "sma_rusted"
+crate-type = ["cdylib"]
+
+[dependencies]

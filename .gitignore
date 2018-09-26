@@ -1,0 +1,9 @@
+/target
+**/*.rs.bk
+Cargo.lock
+
+*.swp
+
+*.o
+*.dll
+*.ex5

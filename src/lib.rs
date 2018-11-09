@@ -1,6 +1,12 @@
 #[no_mangle]
-pub extern fn sma(CLOSE: &[f64], PREV_CALCULATED: &isize, RATES_TOTAL: &isize,
-	PERIOD: &isize, sma: &mut [f64]) {
+pub extern fn sma(CLOSE: &[f64], PREV_CALCULATED: isize, RATES_TOTAL: isize,
+		PERIOD: isize, sma: &mut [f64]) {
+	let start = if PREV_CALCULATED == 0 {
+		0
+	} else {
+		PREV_CALCULATED - 1
+	};
+	let end = RATES_TOTAL - 1;
 }
 
 #[no_mangle]

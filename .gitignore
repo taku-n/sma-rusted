@@ -4,6 +4,5 @@ Cargo.lock
 
 *.swp
 
-*.o
 *.dll
-*.ex5
+*.ex4
